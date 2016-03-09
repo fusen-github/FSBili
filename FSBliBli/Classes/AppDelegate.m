@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FSMainViewController.h"
+#import "FSNavigationController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    FSMainViewController *mainVC = [[FSMainViewController alloc] init];
+    
+    FSNavigationController *nav = [[FSNavigationController alloc] initWithRootViewController:mainVC];
+    
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
