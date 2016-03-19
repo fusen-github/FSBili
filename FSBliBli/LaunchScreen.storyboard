@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bilibili_splash_iphone_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dNp-SO-0s7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bilibili_splash_default" translatesAutoresizingMaskIntoConstraints="NO" id="O8T-hO-cba">
+                                <rect key="frame" x="0.0" y="-80" width="600" height="630"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O8T-hO-cba" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Gwj-5j-Xfc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O8T-hO-cba" secondAttribute="trailing" constant="-20" id="JML-M7-XqY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dNp-SO-0s7" secondAttribute="trailing" constant="-20" id="Kbx-OL-pdE"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="O8T-hO-cba" secondAttribute="bottom" constant="50" id="bgJ-gq-MfF"/>
+                            <constraint firstItem="dNp-SO-0s7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="fGy-OL-Alu"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dNp-SO-0s7" secondAttribute="bottom" id="gS3-yl-SvJ"/>
+                            <constraint firstItem="O8T-hO-cba" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-80" id="jtv-HR-NrU"/>
+                            <constraint firstItem="dNp-SO-0s7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="tsK-JO-rnb"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="89" y="359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bilibili_splash_default" width="320" height="420"/>
+        <image name="bilibili_splash_iphone_bg" width="320" height="568"/>
+    </resources>
 </document>

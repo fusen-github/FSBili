@@ -19,8 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
+//    [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
     
     FSMainViewController *mainVC = [[FSMainViewController alloc] init];
     
@@ -30,8 +34,8 @@
     
     [self.window makeKeyAndVisible];
     
-    
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

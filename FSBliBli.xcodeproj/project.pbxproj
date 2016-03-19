@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045EC8A31C9D1A49008A1CEA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EC8A21C9D1A49008A1CEA /* UIView+Frame.m */; };
+		0498573F1C9D3D8C00FC6E2F /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498573E1C9D3D8C00FC6E2F /* UIButton+Extension.m */; };
 		04BDDDE91C907363003A5793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDDE81C907363003A5793 /* main.m */; };
 		04BDDE021C907364003A5793 /* FSBliBliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDE011C907364003A5793 /* FSBliBliTests.m */; };
 		04BDDE0D1C907364003A5793 /* FSBliBliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDE0C1C907364003A5793 /* FSBliBliUITests.m */; };
 		04BDDE241C907603003A5793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDE1C1C907603003A5793 /* AppDelegate.m */; };
 		04BDDE2A1C90772B003A5793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BDDE291C90772B003A5793 /* Assets.xcassets */; };
 		04BDDE2C1C907744003A5793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDDE2B1C907744003A5793 /* LaunchScreen.storyboard */; };
-		04BDDE2F1C9077E9003A5793 /* FSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDE2E1C9077E9003A5793 /* FSMainViewController.m */; };
-		04BDDE321C907809003A5793 /* FSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDE311C907809003A5793 /* FSNavigationController.m */; };
+		04CE831D1C9D22D600989794 /* FSToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE831C1C9D22D600989794 /* FSToolsManager.m */; };
+		04CE83201C9D239A00989794 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE831F1C9D239A00989794 /* UIImage+Extension.m */; };
+		04CE83281C9D310F00989794 /* FSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE83231C9D310F00989794 /* FSMainViewController.m */; };
+		04CE83291C9D310F00989794 /* FSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE83251C9D310F00989794 /* FSNavigationController.m */; };
+		04CE832C1C9D31E000989794 /* FSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE832B1C9D31E000989794 /* FSMenuView.m */; };
+		04CE832F1C9D33CB00989794 /* FSCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE832E1C9D33CB00989794 /* FSCoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045EC8A11C9D1A49008A1CEA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		045EC8A21C9D1A49008A1CEA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		0498573D1C9D3D8C00FC6E2F /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		0498573E1C9D3D8C00FC6E2F /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		04BDDDE41C907363003A5793 /* FSBliBli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSBliBli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BDDDE81C907363003A5793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BDDDF81C907363003A5793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,11 +58,19 @@
 		04BDDE1C1C907603003A5793 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04BDDE291C90772B003A5793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BDDE2B1C907744003A5793 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		04BDDE2D1C9077E9003A5793 /* FSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMainViewController.h; sourceTree = "<group>"; };
-		04BDDE2E1C9077E9003A5793 /* FSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainViewController.m; sourceTree = "<group>"; };
-		04BDDE301C907809003A5793 /* FSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNavigationController.h; sourceTree = "<group>"; };
-		04BDDE311C907809003A5793 /* FSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNavigationController.m; sourceTree = "<group>"; };
 		04BDDE331C907847003A5793 /* FSBili.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBili.pch; sourceTree = "<group>"; };
+		04CE831B1C9D22D600989794 /* FSToolsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolsManager.h; sourceTree = "<group>"; };
+		04CE831C1C9D22D600989794 /* FSToolsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSToolsManager.m; sourceTree = "<group>"; };
+		04CE831E1C9D239A00989794 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		04CE831F1C9D239A00989794 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		04CE83221C9D310F00989794 /* FSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMainViewController.h; sourceTree = "<group>"; };
+		04CE83231C9D310F00989794 /* FSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainViewController.m; sourceTree = "<group>"; };
+		04CE83241C9D310F00989794 /* FSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNavigationController.h; sourceTree = "<group>"; };
+		04CE83251C9D310F00989794 /* FSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNavigationController.m; sourceTree = "<group>"; };
+		04CE832A1C9D31E000989794 /* FSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMenuView.h; sourceTree = "<group>"; };
+		04CE832B1C9D31E000989794 /* FSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMenuView.m; sourceTree = "<group>"; };
+		04CE832D1C9D33CB00989794 /* FSCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCoverView.h; sourceTree = "<group>"; };
+		04CE832E1C9D33CB00989794 /* FSCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCoverView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045EC8A01C9D1A3E008A1CEA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				045EC8A11C9D1A49008A1CEA /* UIView+Frame.h */,
+				045EC8A21C9D1A49008A1CEA /* UIView+Frame.m */,
+				04CE831E1C9D239A00989794 /* UIImage+Extension.h */,
+				04CE831F1C9D239A00989794 /* UIImage+Extension.m */,
+				0498573D1C9D3D8C00FC6E2F /* UIButton+Extension.h */,
+				0498573E1C9D3D8C00FC6E2F /* UIButton+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		04BDDDDB1C907363003A5793 = {
 			isa = PBXGroup;
 			children = (
@@ -153,10 +184,9 @@
 		04BDDE1D1C907603003A5793 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				04BDDE2D1C9077E9003A5793 /* FSMainViewController.h */,
-				04BDDE2E1C9077E9003A5793 /* FSMainViewController.m */,
-				04BDDE301C907809003A5793 /* FSNavigationController.h */,
-				04BDDE311C907809003A5793 /* FSNavigationController.m */,
+				04CE83211C9D310F00989794 /* Controller */,
+				04CE83261C9D310F00989794 /* Model */,
+				04CE83271C9D310F00989794 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -164,6 +194,7 @@
 		04BDDE1E1C907603003A5793 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				045EC8A01C9D1A3E008A1CEA /* Category */,
 				04BDDE341C90805B003A5793 /* Util */,
 			);
 			path = Other;
@@ -172,8 +203,39 @@
 		04BDDE341C90805B003A5793 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				04CE831B1C9D22D600989794 /* FSToolsManager.h */,
+				04CE831C1C9D22D600989794 /* FSToolsManager.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		04CE83211C9D310F00989794 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04CE83221C9D310F00989794 /* FSMainViewController.h */,
+				04CE83231C9D310F00989794 /* FSMainViewController.m */,
+				04CE83241C9D310F00989794 /* FSNavigationController.h */,
+				04CE83251C9D310F00989794 /* FSNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04CE83261C9D310F00989794 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04CE83271C9D310F00989794 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04CE832A1C9D31E000989794 /* FSMenuView.h */,
+				04CE832B1C9D31E000989794 /* FSMenuView.m */,
+				04CE832D1C9D33CB00989794 /* FSCoverView.h */,
+				04CE832E1C9D33CB00989794 /* FSCoverView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BDDE321C907809003A5793 /* FSNavigationController.m in Sources */,
-				04BDDE2F1C9077E9003A5793 /* FSMainViewController.m in Sources */,
+				04CE832C1C9D31E000989794 /* FSMenuView.m in Sources */,
+				04CE83201C9D239A00989794 /* UIImage+Extension.m in Sources */,
+				04CE831D1C9D22D600989794 /* FSToolsManager.m in Sources */,
 				04BDDE241C907603003A5793 /* AppDelegate.m in Sources */,
+				04CE832F1C9D33CB00989794 /* FSCoverView.m in Sources */,
+				0498573F1C9D3D8C00FC6E2F /* UIButton+Extension.m in Sources */,
+				04CE83291C9D310F00989794 /* FSNavigationController.m in Sources */,
+				045EC8A31C9D1A49008A1CEA /* UIView+Frame.m in Sources */,
+				04CE83281C9D310F00989794 /* FSMainViewController.m in Sources */,
 				04BDDDE91C907363003A5793 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
