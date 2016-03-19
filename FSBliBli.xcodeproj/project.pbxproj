@@ -21,6 +21,8 @@
 		04CE83291C9D310F00989794 /* FSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE83251C9D310F00989794 /* FSNavigationController.m */; };
 		04CE832C1C9D31E000989794 /* FSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE832B1C9D31E000989794 /* FSMenuView.m */; };
 		04CE832F1C9D33CB00989794 /* FSCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE832E1C9D33CB00989794 /* FSCoverView.m */; };
+		04E4D1291C9D872E00A0B41D /* FSTabToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E4D1281C9D872E00A0B41D /* FSTabToolBar.m */; };
+		04E4D12D1C9D8C2900A0B41D /* FSMainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E4D12C1C9D8C2900A0B41D /* FSMainTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		04CE832B1C9D31E000989794 /* FSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMenuView.m; sourceTree = "<group>"; };
 		04CE832D1C9D33CB00989794 /* FSCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCoverView.h; sourceTree = "<group>"; };
 		04CE832E1C9D33CB00989794 /* FSCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCoverView.m; sourceTree = "<group>"; };
+		04E4D1271C9D872E00A0B41D /* FSTabToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTabToolBar.h; sourceTree = "<group>"; };
+		04E4D1281C9D872E00A0B41D /* FSTabToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTabToolBar.m; sourceTree = "<group>"; };
+		04E4D12B1C9D8C2900A0B41D /* FSMainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMainTool.h; sourceTree = "<group>"; };
+		04E4D12C1C9D8C2900A0B41D /* FSMainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 		04BDDE1D1C907603003A5793 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04E4D12A1C9D8BE900A0B41D /* Other */,
 				04CE83211C9D310F00989794 /* Controller */,
 				04CE83261C9D310F00989794 /* Model */,
 				04CE83271C9D310F00989794 /* View */,
@@ -234,8 +241,19 @@
 				04CE832B1C9D31E000989794 /* FSMenuView.m */,
 				04CE832D1C9D33CB00989794 /* FSCoverView.h */,
 				04CE832E1C9D33CB00989794 /* FSCoverView.m */,
+				04E4D1271C9D872E00A0B41D /* FSTabToolBar.h */,
+				04E4D1281C9D872E00A0B41D /* FSTabToolBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04E4D12A1C9D8BE900A0B41D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04E4D12B1C9D8C2900A0B41D /* FSMainTool.h */,
+				04E4D12C1C9D8C2900A0B41D /* FSMainTool.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E4D1291C9D872E00A0B41D /* FSTabToolBar.m in Sources */,
 				04CE832C1C9D31E000989794 /* FSMenuView.m in Sources */,
 				04CE83201C9D239A00989794 /* UIImage+Extension.m in Sources */,
 				04CE831D1C9D22D600989794 /* FSToolsManager.m in Sources */,
@@ -377,6 +396,7 @@
 				045EC8A31C9D1A49008A1CEA /* UIView+Frame.m in Sources */,
 				04CE83281C9D310F00989794 /* FSMainViewController.m in Sources */,
 				04BDDDE91C907363003A5793 /* main.m in Sources */,
+				04E4D12D1C9D8C2900A0B41D /* FSMainTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

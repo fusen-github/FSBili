@@ -9,8 +9,12 @@
 #import "FSMainViewController.h"
 #import "FSMenuView.h"
 #import "FSCoverView.h"
+#import "FSMainTool.h"
+#import "FSTabToolBar.h"
 
-@interface FSMainViewController ()<FSCoverViewDelegate>
+@interface FSMainViewController ()<FSCoverViewDelegate,FSTabToolBarDelegate>
+
+@property (nonatomic, weak) FSMenuView *menuView;
 
 @end
 
@@ -20,12 +24,29 @@
     [super viewDidLoad];
 
     [self setupNavBar];
+    
+    [self setupTabView];
+}
+
+- (void)setupTabView
+{
+    NSArray *titles = @[@"番剧",@"推荐",@"分区",@"关注",@"发现"];
+    
+    FSTabToolBar *toolBar = [[FSTabToolBar alloc] initWithTitleArray:titles
+                                                            delegate:self];
+    
+    toolBar.x = 0;
+    
+    toolBar.y = 0;
+    
+    [self.view addSubview:toolBar];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
 }
+
 
 - (void)setupNavBar
 {
@@ -44,62 +65,17 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self leftBarView]];
     
-    
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 }
+
 
 - (UIView *)leftBarView
 {
-    UIView *view = [[UIView alloc] init];
-    
-    view.height = 44;
-    
-    UIImageView *imageV1 = [[UIImageView alloc] initWithImage:
-                            [UIImage imageNamed:@"ic_drawer_home"]];
-    
-    [view addSubview:imageV1];
-    
-    imageV1.userInteractionEnabled = YES;
-    
-    imageV1.x = 0;
-    
-    imageV1.centerY = self.navigationController.navigationBar.height * 0.5;
-    
-    [view addSubview:imageV1];
-    
-    UIImageView *imageV2 = [[UIImageView alloc] initWithImage:
-                            [UIImage imageNamed:@"bili_default_avatar"]];
-    
-    imageV2.userInteractionEnabled = YES;
-    
-    imageV2.x = imageV1.maxX + 5;
-    
-    imageV2.centerY = self.navigationController.navigationBar.height * 0.5;
-    
-    [view addSubview:imageV2];
-    
-    UILabel *nameLabel = [[UILabel alloc] init];
-    
-    nameLabel.text = @"雅人";
-    
-    [nameLabel sizeToFit];
-    
-    nameLabel.textColor = [UIColor whiteColor];
-    
-    nameLabel.font = [UIFont systemFontOfSize:14];
-    
-    [view addSubview:nameLabel];
-    
-    nameLabel.userInteractionEnabled = YES;
-    
-    nameLabel.x = imageV2.maxX + 5;
-    
-    nameLabel.centerY = self.navigationController.navigationBar.height * 0.5;
+    UIView *view = [FSMainTool mainViewControllerLeftBarButtonWithNavBarHeight:self.navigationController.navigationBar.height];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didCilckMenuView)];
     
     [view addGestureRecognizer:tap];
-    
-    view.width = nameLabel.maxX + 3;
     
     return view;
 }
@@ -110,17 +86,27 @@
     
     FSMenuView *menuView = [[FSMenuView alloc] initWithWidth:kScreenWidth * 0.7];
     
+    self.menuView = menuView;
+    
     [menuView showMenuWithAnimate:YES];
 }
 
 
-
 - (void)didClickCoverView:(UIView *)coverView
+{
+    [self.menuView hideWithAnimate:YES];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        coverView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [coverView removeFromSuperview];
+    }];
+}
+
+- (void)didClickTabItemWithIndex:(NSInteger)index
 {
     
 }
-
-
 
 
 @end

@@ -14,5 +14,6 @@
 
 - (void)showMenuWithAnimate:(BOOL)animate;
 
+- (void)hideWithAnimate:(BOOL)animate;
 
 @end
